@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
+}
 
 body {
     font-family: "Century Gothic", "Apple Gothic", "URW Gothic", sans-serif;
