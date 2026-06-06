@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR-BLOCK — Мультимедийный сайт-визитка</title>
+    
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Мета-теги для соцсетей (Open Graph) -->
+    <meta property="og:title" content="AR-BLOCK — Конструктор нового поколения">
+    <meta property="og:description" content="Собери и оживи свою модель в дополненной реальности">
+    <meta property="og:image" content="images/photo1.webp">
+    <meta property="og:type" content="website">
+</head>
+<body>
+
+    <!-- ШАПКА (HERO) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>AR-BLOCK</h1>
+            <p class="hero-subtitle">Конструктор, который оживает в твоих руках</p>
+            <a href="#" class="btn btn-primary">Узнать больше</a>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main>
+        <!-- БЛОК ГАЛЕРЕИ -->
+        <section class="gallery">
+            <h2>Галерея моделей</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/photo1.webp" alt="Модель космический корабль" loading="lazy">
+                    <p>Космический корабль</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo2.webp" alt="Модель средневековый замок" loading="lazy">
+                    <p>Средневековый замок</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo3.webp" alt="Модель гоночный автомобиль" loading="lazy">
+                    <p>Гоночный автомобиль</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК ВИДЕО (с ленивой загрузкой) -->
+        <section class="video-section">
+            <h2>Видеообзор</h2>
+            <div class="video-container">
+                <div class="video-placeholder" id="videoPlaceholder">
+                    <button class="btn-load-video" id="loadVideoBtn">▶ Загрузить видео</button>
+                    <p>Нажмите, чтобы посмотреть презентацию</p>
+                </div>
+                <div id="videoWrapper" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- БЛОК АУДИО -->
+        <section class="audio-section">
+            <h2>Аудио-сообщение</h2>
+            <div class="audio-card">
+                <audio controls preload="metadata">
+                    <source src="audio/message.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоплеер
+                </audio>
+                <p class="audio-description">🎙️ Короткое приветствие от разработчика</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Учебный проект | Специальность 09.02.07</p>
+            <p>Публикация на GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
