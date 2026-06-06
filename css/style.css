@@ -7,7 +7,7 @@
 
 
 body {
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", "URW Gothic", sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #FFD1DC;
@@ -15,7 +15,7 @@ body {
 
 /* ===== ШАПКА (HERO) ===== */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FFD1DC 0%, #AEC6CF 100%);
     color: white;
     text-align: center;
     padding: 100px 20px;
