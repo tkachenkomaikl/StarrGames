@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
             video.style.width = "100%";
             video.style.height = "100%";
             
-            // Вставьте вашу прямую (Raw) ссылку на видео из GitHub ниже:
             video.src = "videos/video.mp4";
             
             // Очищаем wrapper и добавляем видео-плеер
