@@ -6,32 +6,31 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (loadButton) {
         loadButton.addEventListener('click', function() {
-            // Создаём iframe с YouTube-видео (можно заменить на своё)
-            const iframe = document.createElement('iframe');
-            iframe.width = "100%";
-            iframe.height = "100%";
-            iframe.src = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0";
-            iframe.title = "Видео-презентация AR-BLOCK";
-            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-            iframe.allowFullscreen = true;
+           const video = document.createElement('video');
+            video.controls = true;
+            video.autoplay = true;
+            video.playsInline = true;
+            video.style.width = "100%";
+            video.style.height = "100%";
             
-            // Очищаем wrapper и добавляем iframe
+            // Вставьте вашу прямую (Raw) ссылку на видео из GitHub ниже:
+            video.src = "videos/video.mp4";
+            
+            // Очищаем wrapper и добавляем видео-плеер
             videoWrapper.innerHTML = '';
-            videoWrapper.appendChild(iframe);
+            videoWrapper.appendChild(video);
             
             // Прячем placeholder, показываем wrapper
             videoPlaceholder.style.display = 'none';
             videoWrapper.style.display = 'block';
             
-            // Добавляем стили для правильного отображения iframe
+            // Стили для корректного отображения адаптивного контейнера 16:9
             videoWrapper.style.position = 'relative';
-            videoWrapper.style.paddingBottom = '56.25%'; /* 16:9 */
+            videoWrapper.style.paddingBottom = '56.25%'; /* 16:9 Aspect Ratio */
             videoWrapper.style.height = '0';
-            iframe.style.position = 'absolute';
-            iframe.style.top = '0';
-            iframe.style.left = '0';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
+            video.style.position = 'absolute';
+            video.style.top = '0';
+            video.style.left = '0';
         });
     }
     
